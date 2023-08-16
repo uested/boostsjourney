@@ -1,0 +1,123 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #222;
+  background-color: #ffffff;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+#app {
+  text-align: center;
+  max-width: 900px;
+}
+
+#landing__section {
+  color: #000000;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../src/assets/imgs/backgroundCity2.svg");
+}
+
+.icon__material {
+  color: white;
+}
+
+.my_modal_2 {
+  z-index: 100;
+  width: 200px;
+  height: 200px;
+}
+
+.soft {
+  background-color: rgba(255, 255, 255, 0.67);
+}
+
+.soft--dark {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+section {
+  margin-top: 5rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 1.5rem;
+}
+
+.resource {
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  text-align: left;
+  text-decoration: none;
+  color: #222;
+  background-color: #f1f1f1;
+  border: 1px solid transparent;
+}
+
+.resource:hover {
+  border: 1px solid #000;
+  box-shadow: 0 25px 50px -12px #673ab888;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.button__choice {
+  box-shadow: 0 5px 0px #000000;
+}
+
+.button__choice:hover {
+  transform: scale(1.07);
+  transition-duration: 0.2s;
+}
+
+#avatar {
+  position: fixed;
+  top: 5rem;
+  left: 5rem;
+  height: 90%;
+  width: 20%;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  z-index: 1;
+}
+
+#avatar__friend {
+  height: auto;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-image: url("../src/assets/imgs/friend.png");
+}
+
+@media (max-width: 639px) {
+  #app {
+    margin: 2rem;
+  }
+  section {
+    margin-top: 5rem;
+    grid-template-columns: 1fr;
+    row-gap: 1rem;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color: #ccc;
+    background-color: #1a1a1a;
+  }
+  .resource {
+    color: #ccc;
+    background-color: #161616;
+  }
+  .resource:hover {
+    border: 1px solid #bbb;
+  }
+}
