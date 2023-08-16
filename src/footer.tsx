@@ -13,7 +13,7 @@ export class Footer extends Component {
             it would be cool if she did). Find the github code{" "}
             <a
               class="text-slate-400 hover:text-slate-300"
-              href="https://github.com/uested/boostjourney"
+              href="https://github.com/uested/boostsjourney"
             > 
               here.{" "}
             </a>
